@@ -136,25 +136,86 @@ p{
 
 /* Social Buttons */
 .social-btn {
-  display: inline-block;
-  margin: 4px 0;
-  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6px;
+  background-color: white;
+  color: currentColor;
   text-decoration: none;
-  padding: 6px 12px;
-  border-radius: 4px;
+  padding: 8px 14px;
+  border-radius: 6px;
   font-size: 14px;
-  width:125px;
+  border: 2px solid;
+  width: 140px;
+  transition: all 0.3s ease;
+  position: relative;
 }
-
-.facebook-btn { background-color: #3b5998; }
-.twitter-btn { background-color: #1da1f2; }
-.youtube-btn { background-color: #ff0000; }
-.instagram-btn { background-color: #e1306c; }
-.linkedin-btn { background-color: #0077b5; }
 
 .social-btn i {
-  margin-right: 6px;
+  margin-right: 8px;
+  transition: transform 0.3s ease;
 }
+
+.social-btn:hover i {
+  transform: rotate(15deg) scale(1.1);
+}
+
+/* Facebook */
+.facebook-btn {
+  border-color: #3b5998;
+  color: #3b5998;
+}
+
+.facebook-btn:hover {
+  background-color: #3b5998;
+  color: white;
+}
+
+/* Twitter */
+.twitter-btn {
+  border-color: #1da1f2;
+  color: #1da1f2;
+}
+
+.twitter-btn:hover {
+  background-color: #1da1f2;
+  color: white;
+}
+
+/* YouTube */
+.youtube-btn {
+  border-color: #ff0000;
+  color: #ff0000;
+}
+
+.youtube-btn:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+/* Instagram */
+.instagram-btn {
+  border-color: #e1306c;
+  color: #e1306c;
+}
+
+.instagram-btn:hover {
+  background-color: #e1306c;
+  color: white;
+}
+
+/* LinkedIn */
+.linkedin-btn {
+  border-color: #0077b5;
+  color: #0077b5;
+}
+
+.linkedin-btn:hover {
+  background-color: #0077b5;
+  color: white;
+}
+
 .footer-bottom {
   text-align: center;
   padding-top: 25px;
